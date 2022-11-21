@@ -1,141 +1,279 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>교과과정 | 이화여자대학교 무용과</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>교과과정 | 이화여자대학교 무용과</title>
+    <!-- css style -->
+    <link
+      rel="stylesheet"
+      href="../css/sub.css"
+      media="screen and (min-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/sub-mobile.css"
+      media="screen and (max-width: 767px)"
+    />
 
-  <!-- css style -->
-  <link rel="stylesheet" href="../css/sub.css" media="screen and (min-width: 768px)" />
-  <link rel="stylesheet" href="../css/sub-mobile.css" media="screen and (max-width: 767px)" />
-</head>
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-<body id="sub2-1">
-  <!-- header -->
-  <header id="main-header">
-    <div class="container">
-      <h1>
-        <a href="../index.html">
-          <img src="../images/logo.png" alt="이화여대 무용과" />
-        </a>
-      </h1>
-      <nav id="gnb">
-        <ul class="depth1">
-          <li>
-            <a href="./sub1-1.html">학과소개</a>
-            <ul class="depth2">
-              <li><a href="./sub1-1.html">학과소개</a></li>
-              <li><a href="./sub1-2.html">학과연혁</a></li>
-              <li><a href="./sub1-3.html">교수진</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="./sub2-1.html">교과과정</a>
-            <ul class="depth2">
-              <li><a href="./sub2-1.html">교과과정</a></li>
-              <li><a href="./sub2-2.html">전공안내</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="./sub3-1.html">공지사항</a>
-            <ul class="depth2">
-              <li><a href="./sub3-1.html">공지사항</a></li>
-              <li><a href="./sub3-2.html">학과행사</a></li>
-              <li><a href="./sub3-3.html">외부행사</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="./sub4-1.html">연습실 예약</a>
-            <ul class="depth2">
-              <li><a href="./sub4-1.html">연습실 예약</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="./sub5-1.html">오시는 길</a>
-            <ul class="depth2">
-              <li><a href="./sub5-1.html">오시는 길</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <!-- 토글버튼 -->
-      <div class="btn-toggle">
-        <img src="../images/toggle-site-map.svg" alt="toggle sitemap" />
-      </div>
-    </div>
-    <!-- // header .container -->
-  </header>
-  <div class="wrap">
-    <div class="lnb">
-      <h3><a href="./sub2-1.html">교과과정</a></h3>
-      <ul class="lnb-list">
-        <li class="active"><a href="./sub2-1.html">교과과정</a></li>
-        <li><a href="./sub2-2.html">전공안내</a></li>
-      </ul>
-    </div>
-    <main>
-      <div class="sub-title">
-        <h1>교과과정</h1>
-      </div>
-      <div class="sub-path">
-        <a href="../index.html"><img src="../images/icon-home.png" alt="home" /></a>
-        <img src="../images/icon-arrow.svg" alt="arrow" />
-        <p>교과과정</p>
-        <img src="../images/icon-arrow.svg" alt="arrow" />
-        <p>교과과정</p>
-      </div>
-      <section class="section1"><div class="sub-main-visual">
-        <img src="../images/sub-2-1-main-visual.jpg" alt="교과과정비주얼이미지"></div>
-        <div class="textbox">
-          <h1 class="crimson">A COURSE OF STUDY<br>
-            <span class="main-color"> DEPARTMENT OF DANCE</span>
-          </h1>
-          <h2>무용의 전문지식과 창조적 탐구능력을 <br>
-            함양함으로써 지적 능력과 창조적 역량<br>
-            전인적 소양을 겸비한 차별화된 <br>
-            무용 예술 전문지도자 양성
-          </h2>
-          <img
-        src="../images/sub-section1-line.png"
-        alt="섹션1 라인"
-        class="line"
-      />
+    <script src="../js/sub.js"></script>
+  </head>
+  <body id="sub2-1">
+    <!-- header -->
+    <header id="main-header">
+      <div class="container">
+        <h1>
+          <a href="../index.html">
+            <img src="../images/logo.png" alt="이화여대 무용과" />
+          </a>
+        </h1>
+        <nav id="gnb">
+          <ul class="depth1">
+            <li>
+              <a href="./sub1-1.html">학과소개</a>
+              <ul class="depth2">
+                <li><a href="./sub1-1.html">학과소개</a></li>
+                <li><a href="./sub1-2.html">학과연혁</a></li>
+                <li><a href="./sub1-3.html">교수진</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./sub2-1.html">교과과정</a>
+              <ul class="depth2">
+                <li><a href="./sub2-1.html">교과과정</a></li>
+                <li><a href="./sub2-2.html">전공안내</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./sub3-1.html">공지사항</a>
+              <ul class="depth2">
+                <li><a href="./sub3-1.html">공지사항</a></li>
+                <li><a href="./sub3-2.html">학과행사</a></li>
+                <li><a href="./sub3-3.html">외부행사</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./sub4-1.html">연습실 예약</a>
+              <ul class="depth2">
+                <li><a href="./sub4-1.html">연습실 예약</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./sub5-1.html">오시는 길</a>
+              <ul class="depth2">
+                <li><a href="./sub5-1.html">오시는 길</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- 토글버튼 -->
+        <div id="btn-toggle">
+          <img src="../images/toggle-site-map.svg" alt="toggle sitemap" />
         </div>
-        
+      </div>
+      <!-- // header .container -->
+    </header>
 
-      </section>
-      <section class="section2">
-        <img src="../images/sub-2-1-section-1.jpg" alt="교과과정">
-        <img src="../images/sub-2-1-section-2.jpg" alt="교과과정">
-        <img src="../images/sub-2-1-section-3.jpg" alt="교과과정">
-        <img src="../images/sub-2-1-section-4.png" alt="교과과정">
-      </section>
-    </main>
-  </div>
-  <!-- footer -->
-  <footer id="main-footer">
-    <div class="container">
-      <div class="footer-menu">
-        <a class="ft-str" href="#">개인정보 처리방침</a><span>|</span><a href="#">이메일 무단수집거부</a>
+    <!-- site-map -->
+    <div id="site-map">
+      <div class="container">
+        <div class="header-cover">
+          <h1>
+            <a href="../index.html"
+              ><img src="../images/logo.png" alt="로고"
+            /></a>
+          </h1>
+          <button class="btn-close">
+            <img src="../images/close.svg" alt="닫기" />
+          </button>
+        </div>
+        <nav class="site-map-menu">
+          <ul class="depth1">
+            <li>
+              <a href="./sub1-1.html">학과소개</a>
+              <ul class="depth2">
+                <li><a href="./sub1-1.html">학과소개</a></li>
+                <li><a href="./sub1-2.html">학과연혁</a></li>
+                <li><a href="./sub1-3.html">교수진</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./sub2-1.html">교과과정</a>
+              <ul class="depth2">
+                <li><a href="./sub2-1.html">교과과정</a></li>
+                <li><a href="./sub2-2.html">전공안내</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./sub3-1.html">공지사항</a>
+              <ul class="depth2">
+                <li><a href="./sub3-1.html">공지사항</a></li>
+                <li><a href="./sub3-2.html">학과행사</a></li>
+                <li><a href="./sub3-3.html">외부행사</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="./sub4-1.html">연습실 예약</a>
+              <ul class="depth2">
+                <li><a href="./sub4-1.html">연습실 예약</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="sub5-1.html">오시는 길</a>
+              <ul class="depth2">
+                <li><a href="sub5-1.html">오시는 길</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="address">
-        <p>
-          03760 서울특별시 서대문구 이화여대길 52 이화여자대학교
-          <span class="ft-bold">무용과</span>
-        </p>
-        |
-        <p>대표전화 : 02-3277-2572</p>
-        |
-        <p>이메일 : e600053@ewha.ac.kr</p>
-      </div>
-      <p class="copy">
-        Copyright ⓒ 2022 Ewha Womans University. All Right Reserved.
-      </p>
     </div>
-    <!-- // footer .container-->
-  </footer>
-</body>
+    <!-- // site-map -->
 
+    <!-- wrap -->
+    <div class="wrap">
+      <!-- lnb -->
+      <div class="lnb">
+        <h3>
+          <a href="./sub2-1.html"
+            >교과과정<img
+              class="mob-only"
+              src="../images/sub-lnb-2depth-btn.svg"
+              alt="btn-below"
+          /></a>
+        </h3>
+        <ul class="lnb-list">
+          <li class="active"><a href="./sub2-1.html">교과과정</a></li>
+          <li><a href="./sub2-2.html">전공안내</a></li>
+        </ul>
+      </div>
+      <!-- // lnb -->
+      <!-- main -->
+      <main>
+        <div class="sub-title">
+          <h1>교과과정</h1>
+        </div>
+        <div class="sub-path">
+          <a href="../index.html"
+            ><img src="../images/icon-home.png" alt="home"
+          /></a>
+          <img src="../images/icon-arrow.svg" alt="arrow" />
+          <p>교과과정</p>
+          <img src="../images/icon-arrow.svg" alt="arrow" />
+          <p>교과과정</p>
+        </div>
+
+        <!-- section1 -->
+        <section class="section1">
+          <div class="section1-title">
+            <div class="sub-main-visual">
+              <img
+                src="../images/sub-2-1-main-visual.jpg"
+                alt="교과과정 비주얼이미지"
+              />
+            </div>
+            <div class="textbox">
+              <h1 class="crimson">
+                A COURSE OF STUDY <br />
+                <span class="main-color"> DEPARTMENT OF DANCE </span>
+              </h1>
+              <h2>
+                무용의 전문지식과 창조적 탐구능력을 <br />
+                함양함으로써 지적 능력과 창조적 역량, <br />
+                전인적 소양을 겸비한 차별화된 <br />
+                무용 예술 전문지도자 양성
+              </h2>
+              <img
+                class="line web-only"
+                src="../images/sub-section1-line.png"
+                alt="섹션1 라인"
+              />
+              <img
+                class="line mob-only"
+                src="../images/sub-section1-line-mob.png"
+                alt="섹션1 라인 모바일"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="section2">
+          <img
+            class="web-only"
+            src="../images/sub-2-1-section-1.jpg"
+            alt="1학년"
+          />
+
+          <img
+            class="mob-only"
+            src="../images/sub-2-1-section-1-mob.jpg"
+            alt="1학년"
+          />
+
+          <img class="web-only" src="../images/sub-2-1-section-2.jpg" alt="" />
+
+          <img
+            class="mob-only"
+            src="../images/sub-2-1-section-2-mob.jpg"
+            alt="2학년"
+          />
+
+          <img
+            class="web-only"
+            src="../images/sub-2-1-section-3.jpg"
+            alt="3학년"
+          />
+
+          <img
+            class="mob-only"
+            src="../images/sub-2-1-section-3-mob.jpg"
+            alt="3학년"
+          />
+
+          <img
+            class="web-only"
+            src="../images/sub-2-1-section-4.jpg"
+            alt="4학년"
+          />
+
+          <img
+            class="mob-only"
+            src="../images/sub-2-1-section-4-mob.jpg"
+            alt="4학년"
+          />
+        </section>
+      </main>
+    </div>
+    <!-- // wrap -->
+    <!-- footer -->
+    <footer id="main-footer">
+      <div class="container">
+        <div class="footer-menu">
+          <a class="ft-str" href="#">개인정보 처리방침</a><span>|</span
+          ><a href="#">이메일 무단수집거부</a>
+        </div>
+        <div class="address">
+          <p>
+            03760 서울특별시 서대문구 이화여대길 52
+            <br class="mob-only" />이화여자대학교
+            <span class="ft-bold">무용과</span>
+          </p>
+          <span class="web-only">|</span>
+          <p>대표전화 : 02-3277-2572</p>
+          <span class="web-only">|</span>
+          <p>이메일 : e600053@ewha.ac.kr</p>
+        </div>
+        <p class="copy">
+          Copyright ⓒ 2022 Ewha Womans University. <br class="mob-only" />
+          All Right Reserved.
+        </p>
+      </div>
+      <!-- // footer .container-->
+    </footer>
+  </body>
 </html>
