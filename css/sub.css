@@ -426,12 +426,18 @@ main {
   margin-left: 56px;
 }
 
-#sub1-1 .section2 .content.left-170 {
-  margin-left: 170px;
+#sub1-1 .section2 .content.left-100 {
+  margin-left: 100px;
+}
+#sub1-1 .section2 .content.left-100 .text-box {
+  margin-right: 40px;
+}
+#sub1-1 .section2 .content.left-55 .text-box{
+  margin-left: 40px;
 }
 
 #sub1-1 .section2 .text-box {
-  width: 440px;
+  width: 600px;
 }
 
 #sub1-1 .section2 .text-box hr {
@@ -452,7 +458,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 50px;
   gap: 10px;
   border-radius: 5px;
   box-shadow: 3px 3px 3px #ccc;
@@ -514,6 +520,7 @@ main {
 #sub1-2 .section1 > p {
   margin-top: 15px;
   font-size: 18px;
+  
 }
 #sub1-2 .section1 > p .font-size22{
   font-size: 22px;
