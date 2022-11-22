@@ -100,8 +100,7 @@ a {
   display: flex;
   height: 80px;
 }
-
-#gnb .depth1>li {
+#gnb .depth1 > li {
   width: 100px;
   height: 100%;
   display: inline-block;
@@ -109,8 +108,7 @@ a {
   text-align: center;
   position: relative;
 }
-
-#gnb .depth1>li>a {
+#gnb .depth1 > li > a {
   line-height: 80px;
   font-size: 16px;
   font-weight: 500;
@@ -129,11 +127,10 @@ a {
   opacity: 0;
 }
 
-#gnb .depth2>li {
+#gnb .depth2 > li {
   margin-bottom: 10px;
 }
-
-#gnb .depth2>li:last-child {
+#gnb .depth2 > li:last-child {
   margin-bottom: 0;
 }
 
@@ -143,12 +140,11 @@ a {
 
 /* 호버효과 */
 
-#gnb .depth1>li:hover>a {
+#gnb .depth1 > li:hover > a {
   color: var(--main-color);
   font-weight: 700;
 }
-
-#gnb .depth1>li::after {
+#gnb .depth1 > li::after {
   content: "";
   width: 0px;
   height: 3px;
@@ -158,18 +154,17 @@ a {
   top: 78px;
   transition: 0.5s;
 }
-
-#gnb .depth1>li:hover::after {
+#gnb .depth1 > li:hover::after {
   width: 100px;
 }
 
-#gnb .depth1>li:hover .depth2 {
+#gnb .depth1 > li:hover .depth2 {
   height: auto;
   opacity: 1;
   transition: 0.5s;
 }
 
-#gnb .depth2>li:hover>a {
+#gnb .depth2 > li:hover > a {
   text-decoration: underline;
 }
 
@@ -220,17 +215,17 @@ a {
   justify-content: space-around;
 }
 
-#site-map .site-map-menu .depth1>li {
+#site-map .site-map-menu .depth1 > li {
   width: 30%;
 }
 
-#site-map .site-map-menu .depth1>li>a {
+#site-map .site-map-menu .depth1 > li > a {
   font-size: 20px;
   font-weight: 700;
   line-height: 60px;
 }
 
-#site-map .site-map-menu .depth2>li>a {
+#site-map .site-map-menu .depth2 > li > a {
   font-size: 15px;
   color: #444444;
   line-height: 30px;
@@ -243,7 +238,6 @@ a {
   opacity: 0;
   transition: 0.5s;
 }
-
 #site-map.show {
   height: 800px;
   overflow: visible;
@@ -436,7 +430,7 @@ td {
   border: none;
 }
 
-.section1 .schedule-box .schedule-list>a {
+.section1 .schedule-box .schedule-list > a {
   display: block;
   width: 60px;
   line-height: 25px;
@@ -447,7 +441,7 @@ td {
   margin-bottom: 10px;
 }
 
-.section1 .schedule-box .schedule-list>ul {
+.section1 .schedule-box .schedule-list > ul {
   font-size: 12px;
 }
 
@@ -487,7 +481,7 @@ td {
   border: 0.5px solid #ccc;
 }
 
-.section2 .reservation-banner>img {
+.section2 .reservation-banner > img {
   width: 50%;
 }
 
@@ -499,12 +493,12 @@ td {
   padding-left: 130px;
 }
 
-.section2 .reservation-banner .reservation-link>p {
+.section2 .reservation-banner .reservation-link > p {
   font-size: 10px;
   margin-bottom: 15px;
 }
 
-.section2 .reservation-banner .reservation-link>.btn-reservation {
+.section2 .reservation-banner .reservation-link > .btn-reservation {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -521,7 +515,6 @@ td {
 .section3 .container {
   padding: 100px 20px 50px;
 }
-
 
 .section3 .classes {
   width: 70%;
@@ -547,7 +540,6 @@ td {
 .section3 .classes p {
   font-family: "Nanum Myeongjo", serif;
   line-height: 1.5em;
-  margin-top: 20px;
 }
 
 /* korean-dance */
@@ -697,7 +689,6 @@ td {
   top: 30px;
   right: 90px;
 }
-
 .section3 .ballet p {
   position: relative;
   left: 80px;
