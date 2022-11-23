@@ -19,7 +19,7 @@
 
 body {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 h1 {
@@ -71,7 +71,13 @@ a {
 /* ##### header ##### */
 
 #main-header {
+  width: 100%;
   height: 80px;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  z-index: 1;
+  border-bottom: 0.5px solid #ccc;
 }
 
 #main-header .container {
@@ -79,13 +85,10 @@ a {
   padding: 0 20px;
   justify-content: space-between;
   align-items: center;
-  /* outline: 1px solid blue; */
-  border-bottom: 0.5px solid #ccc;
 }
 
 #gnb {
   z-index: 100;
-  /* outline: 1px solid red; */
 }
 
 /* 1단계 메뉴 */
@@ -94,7 +97,7 @@ a {
   height: 80px;
 }
 #gnb .depth1 > li {
-  width: 100px;
+  width: 110px;
   height: 100%;
   display: inline-block;
   margin: 0 10px;
@@ -103,7 +106,7 @@ a {
 }
 #gnb .depth1 > li > a {
   line-height: 80px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   display: block;
 }
@@ -115,7 +118,7 @@ a {
   border: 0.1px solid #ccc;
   margin-top: 1px;
   padding: 10px;
-  height: 0;
+  max-height: 0;
   overflow: hidden;
   opacity: 0;
 }
@@ -140,33 +143,33 @@ a {
 #gnb .depth1 > li::after {
   content: "";
   width: 0px;
-  height: 2px;
+  height: 3px;
   background: var(--main-color);
   position: absolute;
   left: 0;
-  top: 79px;
+  top: 78px;
   transition: 0.5s;
 }
 #gnb .depth1 > li:hover::after {
-  width: 100px;
+  width: 110px;
 }
 
 #gnb .depth1 > li:hover .depth2 {
-  height: auto;
+  max-height: 200px;
   opacity: 1;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 #gnb .depth2 > li:hover > a {
   text-decoration: underline;
 }
 
-/* ##### 사이트맵 ##### */
+/* ##### site-map ##### */
 
 #site-map {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 800px;
+  height: 820px;
   z-index: 9999;
   top: 0;
 }
@@ -176,6 +179,8 @@ a {
   max-width: 1440px;
   background-image: url(../images/sitemap-bg.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 100%;
   box-shadow: 4px 4px 5px #ccc;
 }
@@ -219,9 +224,8 @@ a {
 }
 
 #site-map .site-map-menu .depth2 > li > a {
-  font-size: 15px;
   color: #444444;
-  line-height: 30px;
+  line-height: 35px;
 }
 
 /* 사이트맵 전환 효과 */
@@ -232,7 +236,7 @@ a {
   transition: 0.5s;
 }
 #site-map.show {
-  height: 800px;
+  height: 820px;
   overflow: visible;
   opacity: 1;
 }
@@ -242,6 +246,7 @@ body {
   background-image: url(../images/sitemap-bg.jpg);
   background-repeat: no-repeat;
   background-position: 50% 86%;
+  padding-top: 80px;
 }
 
 /* ##### wrap ##### */
@@ -292,6 +297,7 @@ body {
 
 /* ##### main ##### */
 main {
+  /* margin-left: 340px; */
   width: 1100px;
   position: relative;
 }
@@ -317,22 +323,31 @@ main {
 }
 
 /* ##### footer ##### */
-
 #main-footer {
   margin-top: 50px;
+  background: #393939;
 }
 
 #main-footer .container {
-  background: #393939;
-  padding: 50px;
+  padding: 30px 50px 40px;
   color: #999;
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #main-footer .footer-menu {
   margin-bottom: 20px;
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  border-bottom: 0.1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+#main-footer .footer-menu .text-box {
+  display: flex;
+  gap: 10px;
 }
 
 #main-footer .footer-menu a {
@@ -344,10 +359,19 @@ main {
   color: #ffcc33;
 }
 
+#main-footer .footer-menu .sns-icon {
+  display: flex;
+  gap: 10px;
+}
+
+#main-footer .footer-menu .sns-icon img {
+  width: 30px;
+}
+
 #main-footer .address {
   display: flex;
-  gap: 20px;
-  margin-bottom: 20px;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 #main-footer .copy {
@@ -405,11 +429,8 @@ main {
 #sub1-1 .section1 > p {
   margin-top: 15px;
   word-break: keep-all;
-  font-size: 18px;
 }
-#sub1-1 .section1 > p .font-size22{
-  font-size: 22px;
-}
+
 /* ##### section2 ##### */
 
 #sub1-1 .section2 {
@@ -426,18 +447,12 @@ main {
   margin-left: 56px;
 }
 
-#sub1-1 .section2 .content.left-100 {
-  margin-left: 100px;
-}
-#sub1-1 .section2 .content.left-100 .text-box {
-  margin-right: 40px;
-}
-#sub1-1 .section2 .content.left-55 .text-box{
-  margin-left: 40px;
+#sub1-1 .section2 .content.left-170 {
+  margin-left: 170px;
 }
 
 #sub1-1 .section2 .text-box {
-  width: 600px;
+  width: 440px;
 }
 
 #sub1-1 .section2 .text-box hr {
@@ -447,18 +462,15 @@ main {
 
 #sub1-1 .section2 .text-box p {
   word-break: keep-all;
-  font-size: 18px;
-  line-height: 26px; 
 }
 
 #sub1-1 .section2 .text-box .btn-link {
-  
   width: 115px;
   height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 20px;
   gap: 10px;
   border-radius: 5px;
   box-shadow: 3px 3px 3px #ccc;
@@ -519,11 +531,6 @@ main {
 
 #sub1-2 .section1 > p {
   margin-top: 15px;
-  font-size: 18px;
-  
-}
-#sub1-2 .section1 > p .font-size22{
-  font-size: 22px;
 }
 
 /* ##### sub1-2 section2 ##### */
@@ -562,7 +569,6 @@ main {
 
 #sub1-2 #history .annual .box2 > ul .history-list {
   margin-left: 25px;
-  font-size: 18px;
 }
 
 #sub1-2 #history .annual .box2 > ul li:first-child {
@@ -809,7 +815,6 @@ main {
 }
 
 #sub4-1 .section3 {
-  width: 1000px;
   height: 150px;
   display: flex;
   /* outline: 1px solid red; */
